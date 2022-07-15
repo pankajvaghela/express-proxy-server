@@ -11,15 +11,24 @@ This basic server allows you to just specify server you want to proxy and client
 ## Usage
 
 
-Step 1 : Clone this repo & install node modules
+### Installation 
+
+Clone this repo & install node modules
 
 ```
 git clone https://github.com/pankajvaghela/express-proxy-server && cd express-proxy-server && yarn install
 ```
 
-Step 2 : Open `proxy-config.js` file in root of project
-Step 3 : Change client.origin & server.target
-Steo 4 : Start server!
+
+### Configuration 🪛
+
+Open `proxy-config.js` file in root of project and change `client.origin` & `server.target` as per your needs.
+
+Open `package.json` and change PORT to the one you wish in `dev` script, by default it is 3002. 
+
+### Start server 🚀 
+
+Run dev script to start server, in development mode.
 
 ```
 yarn dev
