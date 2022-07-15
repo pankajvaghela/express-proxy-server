@@ -4,6 +4,8 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var cors = require("cors");
+const { createProxyMiddleware } = require("http-proxy-middleware");
+
 var config = require("./config");
 
 var app = express();
@@ -17,6 +19,14 @@ app.use(
   cors({
     origin: [config.proxyMap.client.origin],
     credentials: config.proxyMap.client.credentials,
+  })
+);
+
+app.use(
+  "*",
+  createProxyMiddleware({
+    target: config.proxyMap.server.target,
+    changeOrigin: config.proxyMap.server.changeOrigin ?? true,
   })
 );
 
