@@ -4,13 +4,11 @@ A very basic Proxy Server using Express.js
 
 ## About
 
-Goal of this project to fix CORS issue when integrating with APIs from local app.
-
-This basic server allows you to specify server you want to proxy and client domain (mostly http://localhost:3001) and you are good to proxy.
+This basic server setup allows you to specify server you want to proxy for a client domain (mostly http://localhost:3001) and you are good to proxy.
 
 ## Demo
 
-https://express-proxy-server-demo.herokuapp.com/ is proxy-ing to https://github.com
+https://express-proxy-server-demo.herokuapp.com/ is proxy-ing https://github.com
 
 ## Usage
 
@@ -39,3 +37,9 @@ yarn dev
 and your proxy server is up and running.
 
 Happy Proxy-ing!!
+
+# Inspiration
+
+The goal of this project was to fix CORS issue when integrating with APIs from local app. Seeing the benefits of it I changed the setup to generalize proxy.
+
+
