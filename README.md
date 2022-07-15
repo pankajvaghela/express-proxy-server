@@ -8,6 +8,10 @@ Goal of this project to fix CORS issue when integrating with APIs from local app
 
 This basic server allows you to specify server you want to proxy and client domain (mostly http://localhost:3001) and you are good to proxy.
 
+## Demo
+
+https://express-proxy-server-demo.herokuapp.com/ is proxy-ing to https://github.com
+
 ## Usage
 
 ### Installation
