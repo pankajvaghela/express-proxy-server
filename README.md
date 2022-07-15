@@ -6,7 +6,7 @@ A very basic Proxy Server using Express.js
 
 Goal of this project to fix CORS issue when integrating with APIs from local app.
 
-This basic server allows you to specify server you want to proxy and client domain (mostly http://localhost:3000) and you are good to proxy.
+This basic server allows you to specify server you want to proxy and client domain (mostly http://localhost:3001) and you are good to proxy.
 
 ## Usage
 
@@ -22,7 +22,7 @@ git clone https://github.com/pankajvaghela/express-proxy-server && cd express-pr
 
 Open `proxy-config.js` file in root of project and change `client.origin` & `server.target` as per your needs.
 
-Open `package.json` and change PORT to the one you wish in `dev` script, by default it is 3002.
+Open `package.json` and change PORT to the one you wish in `dev` script, by default it is 3001.
 
 ### Start server 🚀
 
