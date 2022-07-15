@@ -1,4 +1,4 @@
-module.exports.proxyMap = {
+const ProxyConfig = {
   client: {
     // Domain for client where your app is running.
     origin: "http://localhost:3000",
@@ -11,3 +11,5 @@ module.exports.proxyMap = {
     changeOrigin: true,
   },
 };
+
+module.exports = ProxyConfig;
